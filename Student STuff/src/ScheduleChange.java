@@ -29,14 +29,17 @@ public class ScheduleChange
 			   {
 				    
 				    MainMenu.roster.get(selectingStud-1).period1Grade(grades);
+				    MainMenu.roster.get(selectingStud-1).period1Grade(neoGrade);
 			   }
 			else if(period == 2)
 				{
-				 MainMenu.roster.get(selectingStud-1).period1(grades);
+					MainMenu.roster.get(selectingStud-1).period1(grades);
+					MainMenu.roster.get(selectingStud-1).period1Grade(neoGrade);
 				}
 			else if(period == 3)
 				{
-				 MainMenu.roster.get(selectingStud-1).period3Grade(grades);
+					MainMenu.roster.get(selectingStud-1).period3Grade(grades);
+					MainMenu.roster.get(selectingStud-1).period1Grade(neoGrade);
 				}
 			
 			System.out.println("You just changed " +  MainMenu.roster.get(selectingStud-1).getFirstName() +  "'s "+ "period " + period + " grade.");
